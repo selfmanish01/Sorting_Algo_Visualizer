@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorting Visulaizer</title>
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/monaco-editor@0.27.0/min/vs/editor/editor.main.css">
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"> -->
+<link href="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>Sorting Visualizer</h1>
+      <a href="https://www.linkedin.com/in/manish-kumar-38b1b9205/" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/selfmanish01" target="_blank"><i class="fa fa-github"></i></a>
+      <a href="https://github.com/selfmanish01/Sorting_Algo_Visualizer" target="_blank">Source Code</a>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="control-box">
+      <div class="slide"><input type="range" min="1" max="100" value="15" id="slider"></div>
+      <div class="arrVal"><span id="valueonslider">25</span></div>
+      <button class="btn" id="gen">Create Array</button>
+    </div>
+    <div class="control-box">
+      <select class="options">
+        <option disabled selected>Choose Sorting Method</option>
+        <option value="bubbleSort">Bubble Sort</option>
+        <option value="selectionSort">Selection Sort</option>
+        <option value="insertionSort">Insertion Sort</option>
+        <option value="quickSort">Quick Sort</option>
+        <option value="mergeSort">Merge Sort</option>
+        <option value="heapSort">Heap Sort</option>
+      </select><br>
+      <button class="btn" id="start">Start</button>
+      <button class="btn" id="reset">Reset</button>
+    </div>
+  </div>
+
+  <div class="parentDiv">
+    <div class="two-boxes">
+      <div class="box" id="visualBox">
+        <!-- Content for Box 2 will be placed dynamically-->
+      </div>
+      <div class="box" id="codeBox">
+        <div class="lang-n-copy">
+        <select class="language-option">
+          <option disabled selected>Code Language</option>
+          <option value="javascript">javascript</option>
+          <option value="cpp">cpp</option>
+          <option value="python">python</option>
+        </select>
+        <button class="fa fa-copy copyBtn" id="copy-btn"></button>
+      </div>
+        <code class="language-javascript" id="codeSnippet">
+  //Choose the array size from slider and then Generate the random array 
+  //Next choose the sorting method and Hit Start to Visualize that method
+      </code>
+      </div>
+    </div>
+    <div class="text">
+      <div class="temp">
+        <div class="text-1"><span>Visualizer Box</span></div>
+      </div>
+      <div class="temp">
+        <div class="text-2"><span>Code Box</span></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="toast" class="toast"></div>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 My Sorting Visualizer. All rights reserved.</p>
+      <p>Created by Manish Kumar</p>
+    </div>
+  </footer>
+
+
+
+
+  <script src="algorithms/bubbleSort.js" type="module"></script>
+  <script src="algorithms/selectionSort.js" type="module"></script>
+  <script src="algorithms/insertionSort.js" type="module"></script>
+  <script src="algorithms/quickSort.js" type="module"></script>
+  <script src="algorithms/mergeSort.js" type="module"></script>
+  <script src="algorithms/heapSort.js" type="module"></script>
+  <script src="index.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.27.0/min/vs/loader.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.js"></script>
+</body>
+
+</html>
