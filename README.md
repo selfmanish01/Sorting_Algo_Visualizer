@@ -2,10 +2,6 @@
 
 **Shorting-Visualizer** is an algorithm-based project designed to enhance the visualization of sorting methodologies. It allows users to interactively observe the inner workings of various sorting algorithms.
 
-## How to Use
-
-Simply visit the GitHub repository at [Shorting-Visualizer](https://github.com/Bhola-kumar/Shorting-Visualizer) to access and use the visualizer.
-
 ## Features
 
 - **Array Generation:**
@@ -31,9 +27,5 @@ Simply visit the GitHub repository at [Shorting-Visualizer](https://github.com/B
 
 - **Reset Visualization:**
   Reset the visualization at any point in time to restart the sorting process.
-
-## Upcoming Features
-
-We are committed to enhancing the project by adding more sorting algorithms and improving the visualization techniques. Your suggestions are valuable in shaping the future of **Shorting-Visualizer**. Please feel free to email your suggestions to bholak993@gmail.com.
 
 Thank you for exploring **Shorting-Visualizer**!
